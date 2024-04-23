@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Onclik Events -->
+    <h2>JavaScript Events</h2>
+
+    <form>
+        <input type="button" onclick="clickevent()" value="Who's this?" />
+    </form>
+    <script>
+        function clickevent() {
+            document.write("This is JS Click event");
+        }
+    </script>
+
+    <!-- Mouse Over Events -->
+
+    <p onmouseover="mouseoverevent()"> Keep cursor over me</p>
+    <script>
+        function mouseoverevent() {
+            alert("This is an alert");
+        }
+    </script>
+
+    <!--  Focus event -->
+
+    <h2> Enter something here</h2>
+    <input type="text" id="input1" onfocus="focusevent()" />
+    <script>
+        function focusevent() {
+            document.getElementById("input1").style.background = " aqua";
+        }
+    </script>
+
+    <!-- Keydown event -->
+
+    <h2> Enter something here</h2>
+    <input type="text" id="input2" onkeydown="keydownevent()" />
+    <script>
+        function keydownevent() {
+            alert("Pressed a key");
+        }
+    </script>
+</body>
+
+</html>

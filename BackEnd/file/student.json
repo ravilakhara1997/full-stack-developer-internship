@@ -1,0 +1,25 @@
+[
+    {
+        "id":1,
+        "Name":"Ravi",
+        "persent":70
+    },
+
+    {
+        "id":2,
+        "Name":"Rahul",
+        "persent":60
+    },
+
+    {
+        "id":3,
+        "Name":"Priyank",
+        "persent":65
+    },
+
+    {
+        "id":4,
+        "Name":"Lalit",
+        "persent":68
+    }
+]

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <!-- Interenal Selectros -->
+    <style>
+        /* Element Selector Style */
+        p{
+            text-align: center;
+            color: red;
+        }
+
+        /* ID Selector Style */
+        #hellow{
+            text-align: center;
+            color: red;
+        }
+
+        /* Class Selector Style */
+        .center{
+            text-align: center;
+            color: red;
+        }
+
+        *{
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Selectors are three types
+    1. Inline Selectors- in this no coments.
+    2. Internal Selectors
+    3. External Selectors Internal and External selectros in provide coments -->
+    <!-- Element Selector -->
+    <p>Every paragraph will be affected by the style.</p>
+    <p id="paral">Me too!</p>
+    <p>And me!</p>
+
+
+    <!-- ID Selector -->
+    <p id="hellow">Hellow word!</p>
+    <p>This paragraph is not affected by the style.</p>
+
+    <!-- Class Selector -->
+    <h1 class="center">Red and center-aligned heading</h1>
+    <p class="center">Red and center-aligned paragraph.</p>
+
+    <!-- Universal Selector -->
+    <h1>Hellow word</h1>
+
+    <p>Every element on the page will be affected by the style.</p>
+    <p>Me too!</p>
+    <p>Add me!</p>
+</body>
+</html>

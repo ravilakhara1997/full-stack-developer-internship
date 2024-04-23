@@ -1,0 +1,88 @@
+.verticalnavbar {
+    width: 150px;
+}
+
+.verticalnavbar a {
+    background-color: rgb(217, 213, 213);
+    color: black;
+    /* display: block; */
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.verticalnavbar a:hover {
+    background-color: rgb(48, 212, 210);
+}
+
+.verticalnavbar a.active {
+    background-color: #0491aa;
+    color: white;
+}
+
+.horizontalnavbar {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.horizontalnavbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins';
+    border-bottom: 5px solid transparent;
+}
+
+.horizontalnavbar a:hover {
+    border-bottom: 5px solid rgb(13, 209, 220);
+}
+
+.horizontalnavbar a.active1 {
+    border-bottom: 5px solid rgb(13, 209, 220);
+}
+
+.fixednav {
+    margin-top:450px;
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.fixednav a {
+    padding: 1px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+}
+
+.fixednav a:hover {
+    color: #18d1b8;
+}
+
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .fixednav {
+        padding-top: 15px;
+    }
+
+    .fixednav a {
+        font-size: 18px;
+    }
+}

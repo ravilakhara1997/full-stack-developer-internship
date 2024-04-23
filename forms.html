@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Forms</h2>
+    <form>
+        <label for="user name">User Name</label><br>
+        <input type="text"><br>
+        <label for="email id">Email id</label><br>
+        <input type="password"><br>
+        <label for="gender">Gernder</label><br><br>
+        <input type="radio" name="gender"> Male <br><br>
+        <input type="radio" name="gender"> Female <br><br>
+        <input type="radio" name="gender"> Other <br><br>
+        <label for="skill">Skill</label><br><br>
+        <input type="checkbox"> HTML <br><br>
+        <input type="checkbox"> CSS <br><br>
+        <input type="checkbox"> JAVAScript <br><br>
+        <input type="checkbox"> JAVA <br><br>
+        <input type="submit">
+    </form>
+    <h2> Validate Form</h2>
+    <form>
+        <label for="user name"> User Name</label><br><br>
+        <input type="text" placeholder="Enter your Name" required><br><br>
+        <label for="emali id"> Email id</label><br><br>
+        <input type="email" placeholder="Enter your Email id" required><br><br>
+        <label for="password">Password</label><br><br>
+        <input type="password" placeholder="Enter your Password" required><br><br>
+        <button onclick="alert('Server Validate')">Validate</button><br><br>
+
+    </form>
+
+    <h2>TextArea</h2>
+
+    <form>
+        <label for="text">About You</label><br><br>
+        <textarea rows="5" cols="10"></textarea><br>
+        <input type="submit">
+    </form>
+
+    <h2>Survey Form</h2>
+    <form>
+        <label for="name">Name</label><br>
+        <input type="text" placeholder="Enter your Name" required><br><br>
+        <label for="email">Email Id</label><br>
+        <input type="email" placeholder="Enter your Email Id" required><br><br>
+        <label for="roll number">Roll Number</label><br>
+        <input type="number" placeholder="Enter your Roll Number" required><br><br>
+        <label for="quality">How do you rate our Course</label><br>
+        <select name="drop-down" id="drop-down">
+            <option>Excelient</option>
+            <option>Good</option>
+            <option>Normal</option>
+            <option>Basic</option>
+        </select><br><br>
+        <label for="favourite topic">Your Favourite topic in HTML</label><br>
+        <input type="checkbox" name="topic1" value="Structuralelements" style="box-sizing: 20px;">Structural Elements <br>
+        <input type="checkbox" name="topic2" value="LinksandList">Links and
+        List <br>
+        <input type="checkbox" name="topic3" value="media">HTML Media<br>
+        <input type="checkbox" name="topic4" value="tables">HTML Table<br>
+        <input type="checkbox" name="topic5" value="groupelements">Grouping
+        Elements<br>
+        <input type="checkbox" name="topic6" value="forms">Forms<br><br>
+        <label for="Course">Do you like HTML course ?</label><br>
+        <input type="radio" name="html"> Yes 
+        <input type="radio" name="html"> No <br><br>
+        <label for="text">Few words about course</label><br>
+        <textarea rows="5" cols="10"></textarea><br><br>
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>

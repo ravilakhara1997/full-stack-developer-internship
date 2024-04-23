@@ -1,0 +1,22 @@
+/* Adjacent Sibling Selector */
+/* div+p{
+    color: yellow;
+} */
+
+/* General Sibling Selector */
+
+/* div~p{
+    color: yellow;
+} */
+
+/* Child Selector */
+
+/* div > p{
+    color: yellow;
+} */
+
+/* CSS Descendant Selector */
+
+div p{
+    color: yellow;
+}

@@ -1,0 +1,41 @@
+h1{
+    color: red;
+}
+
+p{
+    border-style: solid;
+    /* border-style: double;
+    border-style: dotted;
+    border-style: dashed; */
+    /* border-top-style: dotted; this top side of border
+    border-left-style: dashed; this left side of border
+    border-right-style: double; this right side of border
+    border-bottom-style: solid; this bottom side of border */ 
+    /* border-style: solid dotted double dashed; this are (tod right bottom left) border */
+    border-color: rgb(184, 22, 89);
+    /* similar to provied border color for seperate side. to border -style */
+    border-width: 5px;
+}
+a{
+    border-style: solid;
+    border-color: orangered;
+    border-width: 5px;
+    border-radius: 10px;
+    /* border-bottom-left-radius: 40px; */
+    /* similar to top-right, top-left, bottom-right */
+    padding: 5px;
+    font-size: 15px;
+}
+
+a:hover{
+    color: whitesmoke;
+    background-color: red;
+}
+table,th,td{
+    border: solid black;
+    color: brown;
+    width: 5px;
+    border-collapse: collapse;
+    margin-top: 15px;
+    
+}

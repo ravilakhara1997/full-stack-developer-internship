@@ -1,0 +1,101 @@
+.mydiv {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+#reddiv {
+    background-color: coral;
+    flex-grow: 1;
+}
+
+#bluediv {
+    background-color: lightblue;
+    flex-grow: 1;
+}
+
+#yellowdiv {
+    background-color: khaki;
+    flex-grow: 1;
+}
+
+#pinkdiv {
+    background-color: pink;
+    flex-grow: 4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    /* flex-wrap: wrap; */
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.flex-item-1 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+    text-align: center;
+}
+
+.flex-item-2 {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+    text-align: center;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-columnlayout */
+
+@media (max-width: 700px) {
+
+    .flex-item-2,
+    .flex-item-1 {
+        flex: 100%;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: skyblue;
+}
+
+.flex div {
+    background: lightcoral;
+    padding: 5px;
+    width: 100px;
+    height: 150px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    background-color: #E7E9EB;
+}
+
+#myDIV-1 {
+    height: 300px;
+    background-color: #FFFFFF;
+}
+
+#mymain1 {
+    height: 100px;
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+}
+
+#mymain1 div {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}

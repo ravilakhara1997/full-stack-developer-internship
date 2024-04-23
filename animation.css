@@ -1,0 +1,191 @@
+.container {
+    width: 600px;
+    height: 600px;
+    background-color: red;
+
+}
+
+.chaild {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+}
+
+.container:hover>.chaild {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+.container1 {
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+
+}
+
+.chaild1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+}
+
+.container1:hover>.chaild1 {
+    position: relative;
+    animation-name: example1;
+    animation-duration: 4s;
+}
+
+@keyframes example1 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.container2 {
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+
+}
+
+.chaild2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+}
+
+.container2:hover>.chaild2 {
+    position: relative;
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+@keyframes example2 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.container3 {
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    font-weight: bold;
+
+
+}
+
+.container3 > div {
+    width: 70px;
+    height: 30px;
+    background-color: yellow;
+
+}
+
+.container3:hover> div {
+
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+#div1 {
+    animation-timing-function: linear;
+    background-color: aliceblue;
+}
+
+#div2 {
+    animation-timing-function: ease;
+    background-color: rgb(204, 17, 73);
+}
+
+#div3 {
+    animation-timing-function: ease-in;
+    background-color: blue;
+}
+
+#div4 {
+    animation-timing-function: ease-out;
+    background-color: blueviolet;
+}
+
+#div5 {
+    animation-timing-function: ease-in-out;
+    background-color: aqua;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 300px;
+    }
+}

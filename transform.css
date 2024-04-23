@@ -1,0 +1,10 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 2px saddlebrown;
+}
+
+div:hover{
+    transform: scale(0.5,0.5);
+}

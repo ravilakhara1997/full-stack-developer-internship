@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div></div>
+    <script type="text/JavaScript">
+        var student= ["Ravi", "Sanjay", "Priyank"];
+        console.log(student);
+
+        var employees = new Array();
+        employees[0] = "Alex";
+        employees[1] = "Smith";
+        employees[2] = "Yogesh";
+        console.log(employees);
+
+        var subjects = new Array("Math", "English", "Hindi");
+        console.log(subjects);
+
+        const fruits = ["Banana", "Apple", "Graps", "Mango", "Orange"];
+        let length = fruits.length;
+        console.log(fruits);
+        console.log(length);
+
+        var students = ["Ravi", "Sanjay", "Priyank", "Yogesh", "Mayank", "Purva"];
+        // for (i=0; i<students.length; i++){
+        // // console.log(students[i]);
+        // }
+
+        for (let studentss of students){
+            console.log(studentss);
+        }
+
+        const array=[];
+        // getting values from user
+        for(i=0;i<10;i++){
+            array[i]=prompt("Enter student name");
+        }
+        console.log(array);
+        // print using array
+        for(let i=0;i<=10;i++){
+            console.log(`Element at Index: ${i} : ${array[i]}`);
+        }
+    </script>
+</body>
+
+</html>

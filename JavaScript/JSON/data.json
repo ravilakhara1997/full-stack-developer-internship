@@ -1,0 +1,35 @@
+{
+    "user":[
+        {
+            "id":1,
+            "neme":"Alex",
+            "email":"alex@gmail.com"
+        },
+
+        {
+            "id":2,
+            "neme":"carry",
+            "email":"carry@gmail.com"
+        },
+
+        {
+            "id":3,
+            "neme":"ravi",
+            "email":"ravi@gmail.com"
+        }
+    ],
+
+    "post":[
+        {
+            "id":1,
+            "user_id":3,
+            "details":"learning JSON Data"
+        },
+
+        {
+            "id":2,
+            "user_id":4,
+            "details":"learning html Data"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+h1 Users's List 
+table
+    tr
+        th ID
+        th NAME
+        th EMAIL 
+        th COUNTRY
+    each user in users 
+        tr 
+            td #{user.id}
+            td #{user.Name}
+            td #{user.Email}
+            td #{user.Country}

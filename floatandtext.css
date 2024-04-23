@@ -1,0 +1,77 @@
+h1 {
+    color: blue;
+}
+
+.para1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.para2 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: red;
+}
+
+.para3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px red;
+}
+
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+}
+
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: oblique;
+    font-size: 30px;
+}
+
+.a {
+    display: contents;
+    border: 1px solid red;
+    background-color: lightgrey;
+    padding: 10px;
+    width: 200px;
+}
+
+.b {
+    display: inline;
+    color: blue;
+}
+
+.c {
+    display: inherit;
+}
+
+.d {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.e {
+    display: none;
+}
+
+.f {
+    display: inline-flex;
+}
+
+.g {
+    display: run-in;
+}
+
+img {
+    float: right;
+    float:left
+}

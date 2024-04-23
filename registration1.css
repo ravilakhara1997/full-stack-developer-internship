@@ -1,0 +1,29 @@
+body{
+    background-color: lightblue;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.email{
+    padding-left: 20px;
+}
+
+.password{
+    padding-left: 20px;
+}
+
+.phone{
+    padding-left: 20px;
+}
+
+.profession{
+    padding-left: 20px;
+}
+
+.date{
+    padding-left: 20px;
+}
+
+.notes{
+    padding-left: 20px;
+}

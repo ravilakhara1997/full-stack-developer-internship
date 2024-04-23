@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "Name": "Ravi Lakhara",
+            "email": "ravi150155@gmail.com",
+            "Country": "India"
+        },
+        {
+            "id": 2,
+            "Name": "Priyank Sharma",
+            "email": "priyank@gmail.com",
+            "Country": "Nepal"
+        }
+    ]
+}

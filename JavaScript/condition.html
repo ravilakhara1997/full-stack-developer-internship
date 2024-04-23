@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Voting Eligibility Criteria</h1> -->
+
+    <!-- <h2>JavaScript if .. else</h2>
+    <p>A time-based greeting:</p>
+    <p id="demo"></p> -->
+
+    <!-- <h2>JavaScript Math.random()</h2>
+    <p id="demo"></p> -->
+
+    <h2>JavaScript switch</h2>
+    <p id="demo"></p>
+
+    <script>
+        // var age = prompt("enter your age")
+        // if (age >= 18) {
+        //     alert("you are eligible for vote")
+        //     document.write("you are eligible")
+        // }
+        // else {
+        //     alert("you are not elegible")
+        //     document.write("you are not eligible")
+        // }
+
+
+        // const hour = new Date().getHours();
+        // let greeting;
+        // if (hour < 18) {
+        //     greeting = "Good day";
+        // } else {
+        //     greeting = "Good evening";
+        // }
+        // document.getElementById("demo").innerHTML = greeting;
+
+        // let text;
+        // if (Math.random() < 0.5) {
+        //     text = "<a href='linkedin.com'>LinkedIn</a>";
+        // } else {
+        //     text = "<a href='indeed.com'>Indeed</a>";
+        // }
+        // document.getElementById("demo").innerHTML = text;
+
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+
+
+
+    </script>
+
+</body>
+
+</html>
