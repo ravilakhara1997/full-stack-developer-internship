@@ -13,7 +13,7 @@ const addProduct=async(req,res)=>{
     }
 }
 const getAllProduct=async(req,res)=>{
-
+    
 }
 const getProductById=async(req,res)=>{
     

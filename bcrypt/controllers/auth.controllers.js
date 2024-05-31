@@ -1,8 +1,8 @@
-const usermodel=require('../models/user.model')
+const usermodel = require('../models/user.model');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const register=async(req,res)=>{
+const register = async (req, res) => {
     try {
         const { name, username, email, password } = req.body;
         if (!name || !email || !username || !password) {
@@ -24,7 +24,6 @@ const register=async(req,res)=>{
         res.status(500).send({ message: 'Internal Error Occured', error })
     }
 }
-
 const login = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -35,16 +34,16 @@ const login = async (req, res) => {
         if (!user) {
             return res.status(400).send({ message: 'EmailId is not registered with US' });
         }
-        const match = bcrypt.compare(password, user.password);
+        const match =await bcrypt.compare(password, user.password);
         if (match) {
             const payload = { id: user._id, name: user.name, email: user.email }
             //create token
             const token = jwt.sign(payload, process.env.JWT_SECRET)
             res.cookie('token',token);//added token in cookies
             res.status(200).send({ message: 'User Logged In', user:payload })
-            return res.status(201).send({ message: 'User Logged In', token, user:payload });
+            //return res.status(201).send({ message: 'User Logged In', token, user:payload });
         } else {
-            return res.status(201).send({ message: 'Invalid Credentials' });
+            return res.status(400).send({ message: 'Invalid Credentials' });
         }
 
     } catch (error) {
